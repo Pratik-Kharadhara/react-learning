@@ -1,16 +1,18 @@
+import GrocceryListItem from "./GroceeryListItem"
+//here we are making the Groccery listing a sperate element in GroceeryListItem
+//so that we can use that component multiple places 
 export default function GrocceryList({cart}){
-    console.log(cart[2].items)
     return  (
     <ul>
             {cart.map( (list) => 
-                <li style={{
-                    color:list.Status? "green":"red",
-                    textDecoration: list.Status? "line-through":null,
-                }}>
-                     {list.items} -  ${list.price} 
-                </li>
-                
-                
+                // {console.log(list)} ,
+               // <GrocceryListItem {...list}/>// by using spread  item we can send all the key of list here to the child component
+                <GrocceryListItem 
+                    key = {list.id}
+                    items={list.items}
+                    price={list.price}
+                    Status={list.Status}
+                />
 
             )}
         

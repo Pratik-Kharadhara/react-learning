@@ -16,10 +16,10 @@ function App() {
 
   //creating a shopping list items and their status
   const data = [
-    {items:'Egg',price:'12/2',Status:true},
-    {items:'Mango',price:'80',Status:false},
-    {items:'Rice',price:'35',Status:true},
-    {items:'Milk',price:'40',Status:false}
+    {id:1,items:'Egg',price:'12/2',Status:true},
+    {id:2,items:'Mango',price:'80',Status:false},
+    {id:3,items:'Rice',price:'35',Status:true},
+    {id:4,items:'Milk',price:'40',Status:false}
   ]
   return (
     <>
