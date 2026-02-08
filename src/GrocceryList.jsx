@@ -8,7 +8,7 @@ export default function GrocceryList({cart}){
                 // {console.log(list)} ,
                // <GrocceryListItem {...list}/>// by using spread  item we can send all the key of list here to the child component
                 <GrocceryListItem 
-                    key = {list.id}
+                    key = {list.id} // it is use to idetify each child unique 
                     items={list.items}
                     price={list.price}
                     Status={list.Status}

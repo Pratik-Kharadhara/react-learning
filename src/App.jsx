@@ -8,6 +8,7 @@ import DiceRoll from './DiceRoll'
 import ColorList from './ColorList'
 import Slot from './Slot'
 import GrocceryList from './GrocceryList'
+import Rental from './Rental'
 
 
 function App() {
@@ -21,9 +22,22 @@ function App() {
     {id:3,items:'Rice',price:'35',Status:true},
     {id:4,items:'Milk',price:'40',Status:false}
   ]
+
+
+  const properties = [
+  { id: 129031, name: "Desert Yurt", rating: 4.9, price: 150 },
+  { id: 129331, name: "Lone Mountain Cabin", rating: 4.8, price: 250 },
+  { id: 129032, name: "Cactus Retreat", rating: 4.75, price: 300 },
+  { id: 129033, name: "Redwood Treehouse Escape", rating: 4.9, price: 120 },
+  { id: 129034, name: "Oceanview Condo", rating: 4.7, price: 140 },
+  { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
+];
   return (
     <>
-        <GrocceryList cart={data}/>
+        <Rental value={properties} />
+        
+        
+        {/* <GrocceryList cart={data}/> */}
 
         {/* <Slot emojis={['🐨','😴','❤️']}/> */}
         {/* we can do both can write the array here or store it then acces it */}
