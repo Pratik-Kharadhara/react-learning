@@ -9,6 +9,7 @@ import ColorList from './ColorList'
 import Slot from './Slot'
 import GrocceryList from './GrocceryList'
 import Rental from './Rental'
+import Clicker from './Clicker'
 
 
 function App() {
@@ -34,9 +35,9 @@ function App() {
 ];
   return (
     <>
-        <Rental value={properties} />
+        <Clicker msg={"hiii!!"} buttonTxt={"click me!"}/>
         
-        
+        {/* <Rental value={properties} /> */}
         {/* <GrocceryList cart={data}/> */}
 
         {/* <Slot emojis={['🐨','😴','❤️']}/> */}
