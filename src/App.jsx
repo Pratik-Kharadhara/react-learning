@@ -10,9 +10,18 @@ import Slot from './Slot'
 import GrocceryList from './GrocceryList'
 import Rental from './Rental'
 import Clicker from './Clicker'
+import Counter from './Counter'
+import Toggler from './Toggler'
+
 
 
 function App() {
+
+
+
+
+
+
   // const [count, setCount] = useState(0)
   // const values = ['🐨','😴','❤️']
 
@@ -35,7 +44,18 @@ function App() {
 ];
   return (
     <>
-        <Clicker msg={"hiii!!"} buttonTxt={"click me!"}/>
+        
+      <Toggler/>
+
+
+    {/* <Counter/>   */}
+
+
+
+
+
+
+        {/* <Clicker msg={"hiii!!"} buttonTxt={"click me!"}/> */}
         
         {/* <Rental value={properties} /> */}
         {/* <GrocceryList cart={data}/> */}
