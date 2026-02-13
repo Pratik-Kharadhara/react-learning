@@ -12,6 +12,8 @@ import Rental from './Rental'
 import Clicker from './Clicker'
 import Counter from './Counter'
 import Toggler from './Toggler'
+import Colorbox  from './Colorbox'
+import ColorBoxList from './ColorBoxList'
 
 
 
@@ -42,10 +44,17 @@ function App() {
   { id: 129034, name: "Oceanview Condo", rating: 4.7, price: 140 },
   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 ];
+
+
+
+
   return (
     <>
-        
-      <Toggler/>
+
+      <ColorBoxList numBox={25}/>
+
+
+      {/* <Toggler/> */}
 
 
     {/* <Counter/>   */}

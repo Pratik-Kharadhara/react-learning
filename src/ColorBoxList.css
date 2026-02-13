@@ -1,0 +1,7 @@
+.colorbox-list {
+    display: grid;
+  grid-template-columns: repeat(5, 100px); /* 5 boxes per row */
+  gap: 5px;
+  justify-content: center;
+  padding: 5px;
+}
