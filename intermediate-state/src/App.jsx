@@ -3,13 +3,16 @@ import './App.css'
 import AddThree from './AddThree'
 import StateInitializer from './stateInitializer'
 import ScooreKeeper from './ScooreKeeper'
+import EmojiSelect from './EmojiSelect'
 
 function App() {
 
   return (
   <>
   <h2>Intermediate State Concepts</h2>
-    <ScooreKeeper/>
+    <EmojiSelect/>
+    
+    {/* <ScooreKeeper/> */}
     
     
     {/* <AddThree/> */}
