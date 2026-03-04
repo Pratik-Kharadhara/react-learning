@@ -30,12 +30,22 @@ export default function EmojiSelect(){
     function addEmoji(){
            setEmoji([...emoji,{id:uuid(),emoji:"😴"}]);//
     }
+
+    //now we will delete the selected emoji
+function dltEmoji(id){
+        console.log(id);//here we are getting the desired id of the emoji that we have clicked
+    //we will use filter to remove the selected emoji
+    setEmoji((oldEmoji)=>{
+       return oldEmoji.filter((e)=>e.id !== id);
+    })    
+}
+
     return (
         <>
             <h2>updating array using use state</h2>
             {
                 emoji.map((e)=>{ //using map we are iterating all over the array to print the emojis present in the array
-                    return  <span key={e.id} style={{fontSize:"4rem"}}>{e.emoji}</span>//if we dont write e.emoji cant access the emoji icon
+                    return  <span onClick={()=>dltEmoji(e.id)} key={e.id} style={{fontSize:"4rem"}}>{e.emoji}</span>//if we dont write e.emoji cant access the emoji icon
                  //using the uuid we are generating random ids for our items 
                 })
             }
@@ -44,3 +54,4 @@ export default function EmojiSelect(){
         </>
     )
 }
+
