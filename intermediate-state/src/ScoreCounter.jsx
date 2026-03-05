@@ -13,7 +13,7 @@ export default function ScoreCounter({playerNo=3,target=5}){
             })
         }
         )
-        ;
+        
         
     }
     return (
