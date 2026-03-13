@@ -1,9 +1,11 @@
 import Die from "./Die"
+import Dice from "./Dice"
 function App() {
 
   return (
     <>
-      <Die value={3}/>
+      <Dice dice={[2,3,4]} />
+      {/* {<Die value={2}/>} */}
     </>
   )
 }
