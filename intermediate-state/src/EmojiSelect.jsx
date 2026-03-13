@@ -24,7 +24,7 @@
 //now we need to setup the uuid for each component in the array
 //so that we can delete them in future
 import { useState } from "react"
-import {v4 as uuid} from "uuid";
+import {v4 as uuid} from "uuid"; // its used for uuid or Universally Unique Identifier
 export default function EmojiSelect(){
     const[emoji,setEmoji]=useState([{id:uuid(),emoji:"😁"}]);//declaring the array with one emoji and uuid for id 
     function addEmoji(){
@@ -43,6 +43,7 @@ function dltEmoji(id){
     return (
         <>
             <h2>updating array using use state</h2>
+            <h2>Click on the array to delete</h2>
             {
                 emoji.map((e)=>{ //using map we are iterating all over the array to print the emojis present in the array
                     return  <span onClick={()=>dltEmoji(e.id)} key={e.id} style={{fontSize:"4rem"}}>{e.emoji}</span>//if we dont write e.emoji cant access the emoji icon
