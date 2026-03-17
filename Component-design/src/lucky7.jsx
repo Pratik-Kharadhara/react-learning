@@ -11,16 +11,17 @@ export default function Lucky7({numDice=2,goal=7}){
     }
     return (
         <div className="LuckyN">  <h1>   THE LUCKY {goal} GAME</h1>
+           <h3>
+                {
+                        isWinner && <b style={{color:"red"}}>you won!!</b>
+                }
+            </h3>
             <h2>
                 {
                   <Dice dice={dice}/>
                 }
             </h2>
-            <h3>
-                {
-                        isWinner && 
-                }
-            </h3>
+            
             <button onClick={roll}>
                     ROLL
             </button>
