@@ -2,6 +2,7 @@
 import { useState } from "react"
 import Dice from "./Dice"
 import { getRolls } from "./utils"
+import Button from "./button";
 export default function Lucky7({numDice=2,winCheck}){ //winCheck recieves a function which is passed as a prop
     const[dice,setDice]=useState(getRolls(numDice));
     //console.log(dice)
@@ -22,10 +23,9 @@ export default function Lucky7({numDice=2,winCheck}){ //winCheck recieves a func
                   <Dice dice={dice}/>
                 }
             </h2>
-            
-            <button onClick={roll}>
-                    ROLL
-            </button>
+         {/* Instead of using button we will be using a button component which
+         later on can be reused  */}
+        <Button clickFunc={roll}/> {/* roll is a state updater function which is also can be passed as a prop*/}
         </div>
     )
 }
