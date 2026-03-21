@@ -3,6 +3,8 @@ import Dice from "./Dice"
 import Lucky7 from "./lucky7"
 import Lucky7Mod from "./Lucky7Mod"
 import {sum} from "./utils"
+import Box from "./Box"
+import BoxGrid from "./BoxGrid"
 function App() {
   //passing function as a prop through the component
   function less4(dice){
@@ -13,9 +15,16 @@ function App() {
   function allSameValue(dice){
     return dice.every((v)=>(v === dice[0]));
   }
+
+
+
+
   return (
     <>
-      <Lucky7Mod winCheck={allSameValue}/>
+      {/* <Lucky7Mod winCheck={allSameValue}/> */}
+
+      <BoxGrid />
+
     </>
   )
 }
